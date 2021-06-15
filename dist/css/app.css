@@ -10832,9 +10832,20 @@ textarea.form-control-lg {
   width: 60%;
 }
 
+.container_big {
+  width: 90%;
+  margin: auto;
+}
+
 h2, .h2 {
   color: #B1B1B1;
   font-size: 3rem;
+  font-family: "Abril Fatface", cursive;
+}
+
+h4, .h4 {
+  color: #BE9359;
+  padding-top: 1.2rem;
   font-family: "Abril Fatface", cursive;
 }
 
@@ -10895,17 +10906,18 @@ header .jumbotron .title_section hr {
 }
 header .jumbotron .title_section button {
   color: #BE9359;
-  border: 1px solid #BE9359;
-  font-size: 0.7rem;
+  font-weight: bolder;
+  border: 2px solid #BE9359;
+  font-size: 0.9rem;
   text-transform: uppercase;
   background-color: unset;
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.7rem;
   display: block;
   margin-top: 1rem;
   line-height: 1rem;
 }
 header .jumbotron .title_section button:hover {
-  opacity: 0.5;
+  filter: brightness(70%);
 }
 header .jumbotron .hamburger_menu {
   color: #BE9359;
@@ -10924,15 +10936,16 @@ header .jumbotron .hamburger_menu {
 }
 .awards button {
   color: #BE9359;
-  border: 1px solid #BE9359;
-  font-size: 0.7rem;
+  font-weight: bolder;
+  border: 2px solid #BE9359;
+  font-size: 0.9rem;
   text-transform: uppercase;
   background-color: unset;
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.7rem;
   font-weight: bolder;
 }
 .awards button:hover {
-  opacity: 0.5;
+  filter: brightness(70%);
 }
 
 .divisor {
@@ -10948,36 +10961,33 @@ header .jumbotron .hamburger_menu {
 
 .services_section {
   position: relative;
+  padding-top: 4rem;
   padding-bottom: 8rem;
 }
 .services_section span {
   color: #BE9359;
   font-size: 0.8rem;
 }
-.services_section .services_card h4, .services_section .services_card .h4 {
-  color: #BE9359;
-  padding: 1.2rem 0;
-  font-family: "Abril Fatface", cursive;
-}
 .services_section .services_card img {
   height: 90px;
 }
 .services_section .services_card p {
   color: #8b8b8b;
-  padding: 0 1.5rem;
+  padding: 1.2rem 1.5rem;
   font-weight: 300;
 }
 .services_section button {
   color: #BE9359;
-  border: 1px solid #BE9359;
-  font-size: 0.7rem;
+  font-weight: bolder;
+  border: 2px solid #BE9359;
+  font-size: 0.9rem;
   text-transform: uppercase;
   background-color: unset;
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.7rem;
   margin-top: 1.5rem;
 }
 .services_section button:hover {
-  opacity: 0.5;
+  filter: brightness(70%);
 }
 .services_section .divisor {
   position: absolute;
@@ -10987,5 +10997,38 @@ header .jumbotron .hamburger_menu {
   height: 0;
   border-left: 50vw solid transparent;
   border-right: 50vw solid transparent;
-  border-bottom: 80px solid #0e0e0e;
+  border-bottom: 80px solid #121314;
+}
+
+.products_section {
+  padding: 6rem 0;
+  margin-top: -2rem;
+  background-image: url(/dist/img/avadabarbers-reviewsbackground.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.products_section .row {
+  --bs-gutter-x: 0rem;
+}
+.products_section img {
+  height: 250px;
+}
+.products_section span {
+  color: #BE9359;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+.products_section button {
+  color: #BE9359;
+  font-weight: bolder;
+  border: 2px solid #BE9359;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background-color: unset;
+  padding: 0.7rem 1.7rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.products_section button:hover {
+  filter: brightness(70%);
 }

@@ -30,6 +30,8 @@
 
     position: relative;
 
+    padding-top: 4rem;
+
     padding-bottom: 8rem;
 
     span{
@@ -39,19 +41,13 @@
 
     .services_card{
 
-        h4{
-            color: $primary_color;
-            padding: 1.2rem 0;
-            font-family: 'Abril Fatface', cursive;
-        }
-
         img{
             height: 90px;
         }
 
         p{
             color: #8b8b8b;
-            padding: 0 1.5rem;
+            padding: 1.2rem 1.5rem;
             font-weight: 300;
         }
 
@@ -64,7 +60,39 @@
 
     .divisor{
         @include site_divisor;
-        border-bottom: 80px solid rgb(14, 14, 14);
+        border-bottom: 80px solid #121314;
     }
 
+}
+
+.products_section{
+
+    padding: 6rem 0;
+    margin-top: -2rem;
+
+    .row{
+        --bs-gutter-x: 0rem;
+    }
+
+    img{
+        height: 250px;
+    }
+
+    background-image: url(/dist/img/avadabarbers-reviewsbackground.jpg);
+    background-size: cover;
+    background-position: center;
+   
+   
+
+    span{
+        color: $primary_color;
+        font-size: .8rem;
+        font-weight: lighter;
+    }
+
+    button{
+        @include site_button;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
 }

@@ -1,12 +1,13 @@
 @mixin site_button {
     color: $primary_color;
-    border: 1px solid $primary_color;
-    font-size: .7rem;
+    font-weight: bolder;
+    border: 2px solid $primary_color;
+    font-size: .9rem;
     text-transform: uppercase;
     background-color: unset;
-    padding: .5rem 1.5rem;
+    padding: .7rem 1.7rem;
     &:hover{
-        opacity: .5;
+        filter: brightness(70%);
     }
 }
 

@@ -3,9 +3,20 @@
     width: 60%;
 }
 
+.container_big{
+    width: 90%;
+    margin: auto;
+}
+
 h2{
     color: #B1B1B1;
     font-size: 3rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h4{
+    color: $primary_color;
+    padding-top: 1.2rem;
     font-family: 'Abril Fatface', cursive;
 }
 
