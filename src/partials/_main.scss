@@ -67,7 +67,8 @@
 
 .products_section{
 
-    padding: 6rem 0;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
     margin-top: -2rem;
 
     .row{
@@ -95,4 +96,37 @@
         margin-top: 2rem;
         margin-bottom: 5rem;
     }
+}
+
+.month_product{
+
+    .container{
+
+        .col{
+            background-color: #121314; 
+            span{
+                color: $primary_color;
+                font-size: .8rem;
+            }
+
+            p{
+                color: #8b8b8b;
+            }
+
+            button{
+                @include site_button;
+            }
+        }
+
+        .col-4{
+            background-image: url(/dist/img/avadabarbers-cta-background.jpg);
+            background-size: 100%;
+        }
+
+        border-top: 2px solid $primary_color; 
+        margin-top: -2.5rem;
+
+    }
+
+    
 }

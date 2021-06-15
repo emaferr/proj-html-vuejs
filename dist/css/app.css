@@ -11001,7 +11001,8 @@ header .jumbotron .hamburger_menu {
 }
 
 .products_section {
-  padding: 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
   margin-top: -2rem;
   background-image: url(/dist/img/avadabarbers-reviewsbackground.jpg);
   background-size: cover;
@@ -11031,4 +11032,35 @@ header .jumbotron .hamburger_menu {
 }
 .products_section button:hover {
   filter: brightness(70%);
+}
+
+.month_product .container {
+  border-top: 2px solid #BE9359;
+  margin-top: -2.5rem;
+}
+.month_product .container .col {
+  background-color: #121314;
+}
+.month_product .container .col span {
+  color: #BE9359;
+  font-size: 0.8rem;
+}
+.month_product .container .col p {
+  color: #8b8b8b;
+}
+.month_product .container .col button {
+  color: #BE9359;
+  font-weight: bolder;
+  border: 2px solid #BE9359;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background-color: unset;
+  padding: 0.7rem 1.7rem;
+}
+.month_product .container .col button:hover {
+  filter: brightness(70%);
+}
+.month_product .container .col-4 {
+  background-image: url(/dist/img/avadabarbers-cta-background.jpg);
+  background-size: 100%;
 }
