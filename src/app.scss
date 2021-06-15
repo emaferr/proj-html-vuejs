@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
-header{
-    background-color: black;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+// Site
+@import 'partials/variables.scss';
+@import 'partials/mixin.scss';
+@import 'partials/common.scss';
+@import 'partials/header.scss';
+
+

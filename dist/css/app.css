@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
 @charset "UTF-8";
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
@@ -10827,6 +10828,74 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.container {
+  width: 60%;
+}
+
 header {
-  background-color: black;
+  position: sticky;
+  width: 100%;
+}
+header .jumbotron {
+  position: relative;
+  background-image: url(/dist/img/avadabarbers-homepage-hero-bg.jpg);
+  background-size: cover;
+  padding-bottom: 7rem;
+  color: #DDDDDD;
+}
+header .jumbotron .title_section {
+  line-height: 3rem;
+}
+header .jumbotron .title_section h1, header .jumbotron .title_section .h1 {
+  font-size: 4rem;
+  font-family: "Abril Fatface", cursive;
+  margin-bottom: 1.5rem;
+}
+header .jumbotron .title_section span {
+  color: #545452;
+  font-weight: 300;
+}
+header .jumbotron .title_section hr {
+  width: 45%;
+  height: 3px;
+  color: #BE9359;
+  opacity: unset;
+}
+header .jumbotron .title_section button {
+  display: block;
+  color: #BE9359;
+  border: 1px solid #BE9359;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background-color: unset;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
+  line-height: 1rem;
+}
+header .jumbotron .title_section button:hover {
+  opacity: 0.5;
+}
+header .jumbotron .absolute_button {
+  position: absolute;
+  right: 0;
+  top: 8rem;
+}
+header .jumbotron .absolute_button button {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 1px solid black;
+  background-color: #DDDDDD;
+  border-radius: 5px;
+  line-height: 1rem;
+  margin: 0.2rem 0.5rem;
+}
+header .jumbotron .absolute_button button i {
+  color: #33475B;
+}
+header .jumbotron .absolute_button button .price {
+  color: #65BC7B;
+}
+header .jumbotron .absolute_button button .absolute_text {
+  font-size: 0.5rem;
 }
