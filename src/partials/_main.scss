@@ -46,7 +46,7 @@
         }
 
         p{
-            color: #8b8b8b;
+            color: #868686;
             padding: 1.2rem 1.5rem;
             font-weight: 300;
         }
@@ -110,7 +110,7 @@
             }
 
             p{
-                color: #8b8b8b;
+                color: #868686;
             }
 
             button{
@@ -128,5 +128,41 @@
 
     }
 
-    
+}
+
+.reviews_section{
+
+    position: relative;
+
+    .divisor{
+        @include site_divisor;
+        bottom: -80px;
+        border-top: 80px solid #ffffff;
+        border-bottom: none;
+    }
+
+    img{
+        width: 90px;
+        border-radius: 50%;
+    }
+
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+
+    p{
+        padding: 0 1.5rem;
+        color: #868686;
+        font-weight: 300;
+    }
+
+    span{
+        color: $primary_color;
+        font-size: .8rem;
+    }
+
+}
+
+.blog_section{
+    background-color: #F5F5F5;
+    height: 400px;
 }
