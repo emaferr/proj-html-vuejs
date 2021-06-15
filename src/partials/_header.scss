@@ -14,8 +14,8 @@ header{
             line-height: 3rem;
 
             h1{
-                font-size: 4rem;
                 font-family: 'Abril Fatface', cursive;
+                font-size: 4rem;
                 margin-bottom: 1.5rem
             }
     
@@ -33,6 +33,7 @@ header{
     
             button{
                 @include site_button;
+                display: block;
                 margin-top: 1rem;
                 line-height: 1rem;
             }

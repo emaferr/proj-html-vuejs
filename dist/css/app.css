@@ -10832,6 +10832,12 @@ textarea.form-control-lg {
   width: 60%;
 }
 
+h2, .h2 {
+  color: #B1B1B1;
+  font-size: 3rem;
+  font-family: "Abril Fatface", cursive;
+}
+
 header {
   position: sticky;
   width: 100%;
@@ -10847,8 +10853,8 @@ header .jumbotron .title_section {
   line-height: 3rem;
 }
 header .jumbotron .title_section h1, header .jumbotron .title_section .h1 {
-  font-size: 4rem;
   font-family: "Abril Fatface", cursive;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
 }
 header .jumbotron .title_section span {
@@ -10862,13 +10868,13 @@ header .jumbotron .title_section hr {
   opacity: unset;
 }
 header .jumbotron .title_section button {
-  display: block;
   color: #BE9359;
   border: 1px solid #BE9359;
   font-size: 0.7rem;
   text-transform: uppercase;
   background-color: unset;
   padding: 0.5rem 1.5rem;
+  display: block;
   margin-top: 1rem;
   line-height: 1rem;
 }
@@ -10898,4 +10904,27 @@ header .jumbotron .absolute_button button .price {
 }
 header .jumbotron .absolute_button button .absolute_text {
   font-size: 0.5rem;
+}
+
+.awards {
+  background-image: url(/dist/img/avadabarbers-about-introbackground.jpg);
+  background-size: 60%;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+.awards span {
+  color: #BE9359;
+  font-size: 0.8rem;
+}
+.awards button {
+  color: #BE9359;
+  border: 1px solid #BE9359;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  background-color: unset;
+  padding: 0.5rem 1.5rem;
+  font-weight: bolder;
+}
+.awards button:hover {
+  opacity: 0.5;
 }
