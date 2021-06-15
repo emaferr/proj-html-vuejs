@@ -18,6 +18,17 @@
 
 <body>
 
+    <div class="absolute_button">
+        <button class="shadow">
+            <i class="fab fa-atlassian"></i>
+            <span class="absolute_text">Demos</span>                        
+        </button>
+        <button class="shadow">
+            <i class="fas fa-comments-dollar d-block price"></i>
+            <span class="absolute_text">On Sale</span>
+        </button>
+    </div>
+
     <!-- Site header -->
     <header class="site_header">
 
@@ -28,14 +39,14 @@
 
                 <div class="container">
 
-                    <nav class="navbar navbar-light">
+                    <nav class="navbar navbar-light py-3">
                         
                         <a class="navbar-brand" href="#">
                             <img src="./dist/img/avadabarbers-logo-x2.png" alt="Barber Shop Logo" width="120" height="40">
                         </a>
                         <div>
                             <i class="fas fa-shopping-cart fs-6 px-3"></i>
-                            <i class="fas fa-bars fs-4 align-bottom"></i>
+                            <i class="hamburger_menu fas fa-bars fs-6"></i>
                         </div>
                       
                     </nav>
@@ -48,19 +59,8 @@
                             <button>learn more</button>
                         </div>
                         <div class="col-6 text-end">
-                            <img src="./dist/img/avadabarbers_hero_focalmirror-400x550.png" alt="">
+                            <img src="./dist/img/avadabarbers_hero_focalmirror.png" width="100%" alt="">
                         </div>
-                    </div>
-
-                    <div class="absolute_button">
-                        <button>
-                            <i class="fab fa-atlassian"></i>
-                            <span class="absolute_text">Demos</span>                        
-                        </button>
-                        <button>
-                            <i class="fas fa-comments-dollar d-block price"></i>
-                            <span class="absolute_text">On Sale</span>
-                        </button>
                     </div>
 
                 </div>
@@ -83,7 +83,34 @@
             <h2>Pro Barbers</h2>
 
             <button class="mt-3">meet your new barber</button>
+
+            <div class="divisor"></div>
             
+        </section>
+
+        <section class="services_section text-center bg-white mt-4">
+
+            <span class="fw-bolder">MENS GROOMING</span>
+
+            <h2>Services</h2>
+
+            <div class="container">
+                <div class="row">
+                    <div class="services_card col">
+                        <img src="./dist/img/avadabarbers-trimcut-icon-before.png" alt="Trimcut icon">
+                        <h5>Trim & Cut</h5>
+                    </div>
+                    <div class="services_card col">
+                        <img src="./dist/img/avadabarbers-washndry-icon.png" alt="Trimcut icon">
+                        <h5>Trim & Cut</h5>
+                    </div>
+                    <div class="services_card col">
+                        <img src="./dist/img/avadabarbers-trimcut-icon-before.png" alt="Trimcut icon">
+                        <h5>Trim & Cut</h5>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
     </main>

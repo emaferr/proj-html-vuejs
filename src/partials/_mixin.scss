@@ -9,3 +9,18 @@
         opacity: .5;
     }
 }
+
+@mixin site_divisor {
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    
+}
+
+
+

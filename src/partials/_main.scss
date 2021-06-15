@@ -1,12 +1,14 @@
 .awards{
 
+    position: relative;
+
     background-image: url(/dist/img/avadabarbers-about-introbackground.jpg);
 
-    background-size: 60%;
+    background-size: 70%;
 
     padding-top: 5rem;
 
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
 
     span{
         color: $primary_color;
@@ -17,4 +19,24 @@
         @include site_button;
         font-weight: bolder;
     }
+}
+
+.divisor{
+    @include site_divisor;
+    border-bottom: 80px solid white;
+}
+
+.services_section{
+
+    span{
+        color: $primary_color;
+        font-size: .8rem;
+    }
+
+    .services_card{
+        img{
+            height: 90px;
+        }
+    }
+
 }

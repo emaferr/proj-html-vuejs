@@ -10838,6 +10838,32 @@ h2, .h2 {
   font-family: "Abril Fatface", cursive;
 }
 
+.absolute_button {
+  position: fixed;
+  right: 0;
+  top: 8rem;
+  z-index: 999;
+}
+.absolute_button button {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 1px solid transparent;
+  background-color: #DDDDDD;
+  border-radius: 5px;
+  line-height: 1rem;
+  margin: 0.2rem 0.5rem;
+}
+.absolute_button button i {
+  color: #33475B;
+}
+.absolute_button button .price {
+  color: #65BC7B;
+}
+.absolute_button button .absolute_text {
+  font-size: 0.5rem;
+}
+
 header {
   position: sticky;
   width: 100%;
@@ -10846,7 +10872,7 @@ header .jumbotron {
   position: relative;
   background-image: url(/dist/img/avadabarbers-homepage-hero-bg.jpg);
   background-size: cover;
-  padding-bottom: 7rem;
+  padding-bottom: 7.7rem;
   color: #DDDDDD;
 }
 header .jumbotron .title_section {
@@ -10881,36 +10907,16 @@ header .jumbotron .title_section button {
 header .jumbotron .title_section button:hover {
   opacity: 0.5;
 }
-header .jumbotron .absolute_button {
-  position: absolute;
-  right: 0;
-  top: 8rem;
-}
-header .jumbotron .absolute_button button {
-  width: 50px;
-  height: 50px;
-  display: block;
-  border: 1px solid black;
-  background-color: #DDDDDD;
-  border-radius: 5px;
-  line-height: 1rem;
-  margin: 0.2rem 0.5rem;
-}
-header .jumbotron .absolute_button button i {
-  color: #33475B;
-}
-header .jumbotron .absolute_button button .price {
-  color: #65BC7B;
-}
-header .jumbotron .absolute_button button .absolute_text {
-  font-size: 0.5rem;
+header .jumbotron .hamburger_menu {
+  color: #BE9359;
 }
 
 .awards {
+  position: relative;
   background-image: url(/dist/img/avadabarbers-about-introbackground.jpg);
-  background-size: 60%;
+  background-size: 70%;
   padding-top: 5rem;
-  padding-bottom: 7rem;
+  padding-bottom: 10rem;
 }
 .awards span {
   color: #BE9359;
@@ -10927,4 +10933,23 @@ header .jumbotron .absolute_button button .absolute_text {
 }
 .awards button:hover {
   opacity: 0.5;
+}
+
+.divisor {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-bottom: 80px solid white;
+}
+
+.services_section span {
+  color: #BE9359;
+  font-size: 0.8rem;
+}
+.services_section .services_card img {
+  height: 90px;
 }
