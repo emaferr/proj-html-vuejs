@@ -1,0 +1,39 @@
+.footer_section{
+
+    background-color: #121314;
+
+    img{
+        width: 300px;
+    }
+
+    button{
+        @include site_button;
+        margin-top: 1.5rem;
+    }
+
+    span{
+        color: $primary_color;
+        font-size: .8rem;
+    }
+
+    p{
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+
+    .center_footer_col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    i{
+       cursor: pointer;
+       padding: 0 .5rem;
+       color: whitesmoke;
+       &:hover{
+           color: $primary_color;
+       }
+    }
+}
