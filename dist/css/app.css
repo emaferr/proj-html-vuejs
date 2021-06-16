@@ -11098,5 +11098,41 @@ header .jumbotron .hamburger_menu {
 
 .blog_section {
   background-color: #F5F5F5;
-  height: 400px;
+  padding-top: 10rem;
+}
+.blog_section .card_blog {
+  width: 100%;
+  overflow: auto;
+}
+.blog_section p {
+  color: #868686;
+  font-weight: 300;
+}
+.blog_section img {
+  width: 100%;
+  height: 180px;
+  overflow: auto;
+}
+.blog_section img:hover {
+  transform: scale(1.1);
+  opacity: 90%;
+  transition: opacity 1s, transform 1s;
+  cursor: pointer;
+}
+.blog_section span {
+  color: #BE9359;
+  font-size: 0.8rem;
+}
+.blog_section button {
+  color: #BE9359;
+  font-weight: bolder;
+  border: 2px solid #BE9359;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  background-color: unset;
+  padding: 0.7rem 1.7rem;
+  margin-bottom: 6rem;
+}
+.blog_section button:hover {
+  filter: brightness(70%);
 }
