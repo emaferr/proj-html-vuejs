@@ -33,7 +33,7 @@
             </button>
         </div>
     
-        <nav class="navbar navbar-light py-3">
+        <nav class="navbar navbar-light py-3" :class="{ 'onScroll': !view.topOfPage}">
     
             <div class="container">
     
@@ -197,20 +197,7 @@
                             <img :src="'./dist/img/avadabarbers-trimcut-gallery' + review.user_image + '.jpg'" alt="">
                             <span class="d-block mt-3 fw-bold">{{review.user_name}}</span>
                         </div>
-                        <!-- <div class="col-4">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.
-                            </p>
-                            <img src="./dist/img/avadabarbers-trimcut-gallery7.jpg" alt="">
-    
-                        </div>
-                        <div class="col-4">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.
-                            </p>
-                            <img src="./dist/img/avadabarbers-trimcut-gallery3.jpg">
-                        </div> -->
-    
+        
                     </div>
     
                 </div>

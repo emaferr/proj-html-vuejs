@@ -6,6 +6,10 @@ const app = new Vue({
 
     data:{
 
+        view: {
+            topOfPage: true
+          },
+
         services: [
 
             {
@@ -69,6 +73,20 @@ const app = new Vue({
         ]
 
     },
-    
+
+    // Change background color to navbar on scroll
+    beforeMount() {
+    window.addEventListener('scroll', this.handleScroll)
+    },
+
+    methods: {
+    handleScroll(){
+        if(window.pageYOffset>0){
+        if(this.view.topOfPage) this.view.topOfPage = false
+        } else {
+        if(!this.view.topOfPage) this.view.topOfPage = true
+        }
+    }
+    },
     
 })

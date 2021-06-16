@@ -10879,6 +10879,11 @@ h4, .h4 {
   position: fixed;
   z-index: 99999;
   width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.navbar.onScroll {
+  box-shadow: 0 0 10px #1f1f1ff1;
+  background-color: #000000ea;
 }
 .navbar i {
   color: whitesmoke;

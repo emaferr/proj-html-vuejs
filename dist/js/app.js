@@ -3060,6 +3060,9 @@ __webpack_require__.r(__webpack_exports__);
 var app = new Vue({
   el: '#app',
   data: {
+    view: {
+      topOfPage: true
+    },
     services: [{
       image_service: 'avadabarbers-trimcut-icon-before',
       name_service: 'Trim & Cut',
@@ -3103,9 +3106,21 @@ var app = new Vue({
       user_image: '3',
       review_txt: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.'
     }]
+  },
+  // Change background color to navbar on scroll
+  beforeMount: function beforeMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll: function handleScroll() {
+      if (window.pageYOffset > 0) {
+        if (this.view.topOfPage) this.view.topOfPage = false;
+      } else {
+        if (!this.view.topOfPage) this.view.topOfPage = true;
+      }
+    }
   }
 });
-Vue.config.devtools = true;
 
 /***/ }),
 
