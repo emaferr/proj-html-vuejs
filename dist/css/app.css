@@ -11178,3 +11178,15 @@ header .jumbotron .hamburger_menu {
 .footer_section i:hover {
   color: #BE9359;
 }
+
+.copy_section {
+  background-color: #161718;
+  font-size: 0.6rem;
+  padding: 2.3rem 0;
+}
+.copy_section p {
+  margin: 0;
+}
+.copy_section span {
+  color: #BE9359;
+}

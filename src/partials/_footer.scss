@@ -37,3 +37,15 @@
        }
     }
 }
+
+.copy_section{
+    p{
+        margin: 0;
+    }
+    background-color: #161718;
+    font-size: .6rem;
+    padding: 2.3rem 0;
+    span{
+        color: $primary_color;
+    }
+}
