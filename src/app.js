@@ -12,6 +12,20 @@ const app = new Vue({
             topOfPage: true
           },
 
+        agency: {
+
+            name: 'Avada Barbers',
+
+            street: '123 New York Street',
+
+            city: 'New York City',
+
+            eMail: 'info@yourwebsite.com',
+
+            phone: '+1 (555) 555-1212'
+
+        },
+
         services: [
 
             {

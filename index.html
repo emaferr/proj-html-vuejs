@@ -252,29 +252,9 @@
                             </div>
     
                         </div>
-                        <!-- <div class="col-4 ">
-                            <div class="card_blog">
-                                <img src="./dist/img/avadabarbers-choosing-blog-700x441.jpg" alt="">
-                            </div>
-                            <div class="px-3">
-                                <h4>Choosing The Right Barber</h4>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo quam non?
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card_blog">
-                                <img src="./dist/img/avadabarbers-ourservice-blog-700x441.jpg" alt="">
-                            </div>
-                            <div class="px-3 card_blog">
-                                <h4>Quick Service Guide</h4>
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo quam non?
-                                </p>
-                            </div>
-                        </div> -->
+
                     </div>
+
                 </div>
     
                 <button>read more from our blog</button>
@@ -297,12 +277,13 @@
                         </div>
                         <div class="col-4 center_footer_col">
                             <img style="width: 120px;" src="./dist/img/avadabarbers-logo-x2-300x104.png" alt="">
-                            <p class="text-white-50 fw-light"> 
-                                Avada Barbers <br>
-                                123 New York Street <br>
-                                New York City <br>
-                                info@yourwebsite.com <br>
-                                +1 (555) 555-1212
+                            <!-- use VueJs to enter agency data -->
+                            <p class="agency"> 
+                                <span class="text-white-50">{{agency.name}}</span>
+                                <span class="text-white-50">{{agency.street}}</span>
+                                <span class="text-white-50">{{agency.city}}</span>
+                                <span class="text-white-50">{{agency.eMail}}</span>
+                                <span class="text-white-50">{{agency.phone}}</span>
                             </p>
                             <span>FOLLOW US</span>
                             <div class="footer_icons">

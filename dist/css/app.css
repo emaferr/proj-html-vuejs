@@ -11233,6 +11233,9 @@ header .jumbotron .hamburger_menu {
   color: #BE9359;
   font-size: 0.8rem;
 }
+.footer_section .agency span {
+  display: block;
+}
 .footer_section p {
   font-size: 0.8rem;
   line-height: 1.5rem;

@@ -3064,6 +3064,13 @@ var app = new Vue({
     view: {
       topOfPage: true
     },
+    agency: {
+      name: 'Avada Barbers',
+      street: '123 New York Street',
+      city: 'New York City',
+      eMail: 'info@yourwebsite.com',
+      phone: '+1 (555) 555-1212'
+    },
     services: [{
       image_service: 'avadabarbers-trimcut-icon-before',
       name_service: 'Trim & Cut',
