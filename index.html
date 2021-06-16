@@ -88,7 +88,7 @@
                                 <button>learn more</button>
                             </div>
                             <div class="col-6 text-end">
-                                <img src="./dist/img/avadabarbers_hero_focalmirror.png" width="100%" alt="">
+                                <img src="./dist/img/avadabarbers_hero_focalmirror.png" width="100%" alt="man intent on cutting hair">
                             </div>
                         </div>
     
@@ -133,7 +133,7 @@
                         <!-- use VueJs to cycle services dynamically -->
                         <div v-for="(service, index) in services" class="services_card col">
                             
-                            <img :src="'./dist/img/' + service.image_service + '.png'" alt="Trimcut icon">
+                            <img :src="'./dist/img/' + service.image_service + '.png'" :alt="service.name_service">
                             <h4>{{service.name_service}}</h4>
                             <p>
                                 {{service.description_service}}
@@ -164,7 +164,7 @@
                         
                         <!-- use VueJs to cycle products dynamically -->
                         <div v-for="(product, index) in products" class="col-3">
-                            <img :src="'./dist/img/' + product.image_product" alt="Trimcut icon">
+                            <img :src="'./dist/img/' + product.image_product" :alt="product.name_product">
                             <h4>{{product.name_product}}</h4>
                             <span>${{product.price_product}}</span>
                         </div>
@@ -184,7 +184,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-4">
-                            <img style="width: 100%; margin-top: 1rem;" src="./dist/img/shaving_butter.png" alt="">
+                            <img style="width: 100%; margin-top: 1rem;" src="./dist/img/shaving_butter.png" alt="shaving butter">
                         </div>
                         <div class="col p-4">
                             <span class="fw-bolder">THIS MONTHS FEATURED PRODUCT</span>
@@ -215,7 +215,7 @@
                             <p>
                                 {{review.review_txt}}
                             </p>
-                            <img :src="'./dist/img/avadabarbers-trimcut-gallery' + review.user_image + '.jpg'" alt="">
+                            <img :src="'./dist/img/avadabarbers-trimcut-gallery' + review.user_image + '.jpg'" :alt="review.user_name + ' avatar'">
                             <span class="d-block mt-3 fw-bold">{{review.user_name}}</span>
                         </div>
         
@@ -242,7 +242,7 @@
                         <!-- use VueJs to cycle post dynamically -->
                         <div v-for="(post, index) in posts" class="col-4">
                             <div class="card_blog">
-                                <img :src=" './dist/img/avadabarbers-' + post.post_image + '-blog-700x441.jpg'" alt="">
+                                <img :src=" './dist/img/avadabarbers-' + post.post_image + '-blog-700x441.jpg'" :alt="post.post_name">
                             </div>
                             <div class="px-3">
                                 <h4>{{post.post_name}}</h4>
