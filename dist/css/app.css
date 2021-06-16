@@ -10921,6 +10921,7 @@ h4, .h4 {
   color: #BE9359;
 }
 .navbar .drop i {
+  font-size: 1.5rem;
   cursor: pointer;
   position: fixed;
   color: whitesmoke;
