@@ -47,6 +47,25 @@ const app = new Vue({
                 name_product:'Straight Razor',
                 price_product:'30.00'
             }
+        ],
+
+        reviews: [
+
+            {
+                user_name: 'John Doe',
+                user_image:'6',
+                review_txt:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.'
+            },
+            {
+                user_name: 'Pete Jones',
+                user_image:'7',
+                review_txt:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.'
+            },
+            {
+                user_name: 'Mark Wilson',
+                user_image:'3',
+                review_txt:'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.'
+            },
         ]
 
     },

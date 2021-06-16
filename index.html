@@ -147,22 +147,7 @@
                             <h4>{{product.name_product}}</h4>
                             <span>${{product.price_product}}</span>
                         </div>
-                        <!-- <div class="col-3">
-                            <img src="./dist/img/scissors.webp" alt="Trimcut icon">
-                            <h4>Scissors</h4>
-                            <span>$85.00</span>
-                        </div>
-                        <div class="col-3">
-                            <img src="./dist/img/hot_oil_dark.png" alt="Trimcut icon">
-                            <h4>Hot Oil</h4>
-                            <span>$15.00</span>
-                        </div>
-                        <div class="col-3">
-                            <img src="./dist/img/straight_razor_dark.png" alt="Trimcut icon">
-                            <h4>Straight Razor</h4>
-                            <span>$30.00</span>
-                        </div> -->
-    
+        
                     </div>
     
                 </div>
@@ -203,14 +188,16 @@
                     <h2 class="mb-3">Reviews</h2>
     
                     <div class="row pt-4">
-    
-                        <div class="col-4">
+                        
+                        <!-- use VueJs to cycle reviews dynamically -->
+                        <div v-for="(review, index) in reviews" class="col-4">
                             <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.
+                                {{review.review_txt}}
                             </p>
-                            <img src="./dist/img/avadabarbers-trimcut-gallery6.jpg" alt="">
+                            <img :src="'./dist/img/avadabarbers-trimcut-gallery' + review.user_image + '.jpg'" alt="">
+                            <span class="d-block mt-3 fw-bold">{{review.user_name}}</span>
                         </div>
-                        <div class="col-4">
+                        <!-- <div class="col-4">
                             <p>
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.
                             </p>
@@ -222,7 +209,7 @@
                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.
                             </p>
                             <img src="./dist/img/avadabarbers-trimcut-gallery3.jpg">
-                        </div>
+                        </div> -->
     
                     </div>
     
