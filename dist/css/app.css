@@ -11198,6 +11198,8 @@ header .jumbotron .hamburger_menu {
   margin-top: -2.5rem;
 }
 .month_product .container .col {
+  overflow: auto;
+  height: 340px;
   background-color: #121314;
 }
 .month_product .container .col span {
@@ -11220,6 +11222,10 @@ header .jumbotron .hamburger_menu {
   filter: brightness(70%);
 }
 .month_product .container .col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
   background-image: url(../../dist/img/avadabarbers-cta-background.jpg);
   background-size: cover;
 }
@@ -11300,7 +11306,7 @@ header .jumbotron .hamburger_menu {
   background-color: #121314;
 }
 .footer_section img {
-  width: 300px;
+  width: 100%;
 }
 .footer_section button {
   color: #BE9359;

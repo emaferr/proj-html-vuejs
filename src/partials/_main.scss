@@ -108,6 +108,8 @@
     .container{
 
         .col{
+            overflow: auto;
+            height: 340px;
             background-color: #121314; 
             span{
                 color: $primary_color;
@@ -124,6 +126,10 @@
         }
 
         .col-4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 340px;
             background-image: url(../../dist/img/avadabarbers-cta-background.jpg);
             background-size: cover;
         }
