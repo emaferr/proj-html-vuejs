@@ -62,11 +62,59 @@ h4{
         background-color: #000000ea;
       }
 
-    i{color: whitesmoke;}
+    i{color: whitesmoke; cursor: pointer;}
 
     .hamburger_menu{
         color: $primary_color;
+        &:hover{
+            filter: brightness(70%);
+        }
+    }
+
+    .drop{
+        position: fixed;
+        background: #000000e3;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 2.6rem;
+      
+        ul{
+            list-style: none;
+
+            text-align: center;
+
+            li{
+                cursor: pointer;
+                color: whitesmoke;
+                font-family: 'Abril Fatface', cursive;
+                text-transform: capitalize;
+                font-size: 1.3rem;
+                &:hover{
+                    color: $primary_color
+                }
+
+            }
+
+        }
+
+        i{
+            cursor: pointer;
+            position: fixed;
+            color: whitesmoke;
+            top: 20px;
+            right: 20px;
+            &:hover{
+                color: $primary_color
+            }
+        }
     }
 }
 
+.fade-enter { opacity: 0 };
+.fade-enter-active { transition: opacity 1s ease };
+.fade-leave-active { transition: opacity 1s ease; opacity: 0};
 

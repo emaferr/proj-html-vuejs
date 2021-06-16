@@ -3060,6 +3060,7 @@ __webpack_require__.r(__webpack_exports__);
 var app = new Vue({
   el: '#app',
   data: {
+    show: false,
     view: {
       topOfPage: true
     },
@@ -3118,7 +3119,10 @@ var app = new Vue({
       } else {
         if (!this.view.topOfPage) this.view.topOfPage = true;
       }
-    }
+    } // openHamMenu(){
+    //     console.log('ciao');
+    // }
+
   }
 });
 

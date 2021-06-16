@@ -10887,9 +10887,61 @@ h4, .h4 {
 }
 .navbar i {
   color: whitesmoke;
+  cursor: pointer;
 }
 .navbar .hamburger_menu {
   color: #BE9359;
+}
+.navbar .hamburger_menu:hover {
+  filter: brightness(70%);
+}
+.navbar .drop {
+  position: fixed;
+  background: #000000e3;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.6rem;
+}
+.navbar .drop ul {
+  list-style: none;
+  text-align: center;
+}
+.navbar .drop ul li {
+  cursor: pointer;
+  color: whitesmoke;
+  font-family: "Abril Fatface", cursive;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+.navbar .drop ul li:hover {
+  color: #BE9359;
+}
+.navbar .drop i {
+  cursor: pointer;
+  position: fixed;
+  color: whitesmoke;
+  top: 20px;
+  right: 20px;
+}
+.navbar .drop i:hover {
+  color: #BE9359;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition: opacity 1s ease;
+}
+
+.fade-leave-active {
+  transition: opacity 1s ease;
+  opacity: 0;
 }
 
 header {

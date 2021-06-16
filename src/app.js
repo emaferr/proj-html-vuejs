@@ -6,6 +6,8 @@ const app = new Vue({
 
     data:{
 
+        show: false,
+
         view: {
             topOfPage: true
           },
@@ -80,13 +82,23 @@ const app = new Vue({
     },
 
     methods: {
+
     handleScroll(){
         if(window.pageYOffset>0){
         if(this.view.topOfPage) this.view.topOfPage = false
         } else {
         if(!this.view.topOfPage) this.view.topOfPage = true
         }
-    }
+    },
+
+    // openHamMenu(){
+
+    //     console.log('ciao');
+    // }
+
+
+
+
     },
     
 })

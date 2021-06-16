@@ -42,12 +42,33 @@
                 </a>
                 <div>
                     <i class="fas fa-shopping-cart fs-6 px-3"></i>
-                    <i class="hamburger_menu fas fa-bars fs-6"></i>
+                    <i v-on:click="show = true" class="hamburger_menu fas fa-bars fs-6"></i>
                 </div>
     
             </div>
+
+            <transition name="fade" appear>
+
+                <div v-if="show" class="drop">
+                    <div>
+                        <ul>
+                            <li>home</li>
+                            <li>about Us</li>
+                            <li>services</li>
+                            <li>shop</li>
+                            <li>our Team</li>
+                            <li>blog</li>
+                            <li>contact us</li>
+                        </ul>
+                    </div>
+                    <i v-on:click="show = false" class="fas fa-times"></i>
+                </div>
+            
+            </transition>
           
         </nav>
+
+        
     
         <!-- Site header -->
         <header class="site_header">
