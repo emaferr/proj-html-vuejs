@@ -4,7 +4,7 @@ header{
     
     .jumbotron{
         position: relative;
-        background-image: url(/dist/img/avadabarbers-homepage-hero-bg.jpg);
+        background-image: url(../../dist/img/avadabarbers-homepage-hero-bg.jpg);
         background-size: cover;
         padding-bottom: 7.7rem;
         color: #DDDDDD;
@@ -25,7 +25,7 @@ header{
             }
     
             hr{
-                width: 45%;
+                width: 180px;
                 height: 3px;
                 color: $primary_color;
                 opacity: unset;

@@ -10881,7 +10881,7 @@ header {
 }
 header .jumbotron {
   position: relative;
-  background-image: url(/dist/img/avadabarbers-homepage-hero-bg.jpg);
+  background-image: url(../../dist/img/avadabarbers-homepage-hero-bg.jpg);
   background-size: cover;
   padding-bottom: 7.7rem;
   color: #DDDDDD;
@@ -10899,7 +10899,7 @@ header .jumbotron .title_section span {
   font-weight: 300;
 }
 header .jumbotron .title_section hr {
-  width: 45%;
+  width: 180px;
   height: 3px;
   color: #BE9359;
   opacity: unset;
@@ -10923,9 +10923,20 @@ header .jumbotron .hamburger_menu {
   color: #BE9359;
 }
 
+.divisor {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 50vw solid transparent;
+  border-right: 50vw solid transparent;
+  border-bottom: 80px solid white;
+}
+
 .awards {
   position: relative;
-  background-image: url(/dist/img/avadabarbers-about-introbackground.jpg);
+  background-image: url(../../dist/img/avadabarbers-about-introbackground.jpg);
   background-size: 70%;
   padding-top: 5rem;
   padding-bottom: 10rem;
@@ -10946,17 +10957,6 @@ header .jumbotron .hamburger_menu {
 }
 .awards button:hover {
   filter: brightness(70%);
-}
-
-.divisor {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 50vw solid transparent;
-  border-right: 50vw solid transparent;
-  border-bottom: 80px solid white;
 }
 
 .services_section {
@@ -11004,7 +11004,7 @@ header .jumbotron .hamburger_menu {
   padding-top: 6rem;
   padding-bottom: 3rem;
   margin-top: -2rem;
-  background-image: url(/dist/img/avadabarbers-reviewsbackground.jpg);
+  background-image: url(../../dist/img/avadabarbers-reviewsbackground.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -11061,7 +11061,7 @@ header .jumbotron .hamburger_menu {
   filter: brightness(70%);
 }
 .month_product .container .col-4 {
-  background-image: url(/dist/img/avadabarbers-cta-background.jpg);
+  background-image: url(../../dist/img/avadabarbers-cta-background.jpg);
   background-size: 100%;
 }
 
