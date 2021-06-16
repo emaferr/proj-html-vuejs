@@ -116,6 +116,23 @@ h4{
     }
 }
 
+// page top button
+#pagetop{
+    cursor: pointer;
+    position: fixed;
+    right: 50px;
+
+    i{
+        font-size: 1rem;
+        padding: .3rem 1rem;
+        background-color: #303030;
+        color: whitesmoke; 
+
+        &:hover{
+            background-color: $primary_color;
+        }
+    }
+}
 // dropmenu animation
 .fade-enter { opacity: 0 };
 .fade-enter-active { transition: opacity 1s ease };

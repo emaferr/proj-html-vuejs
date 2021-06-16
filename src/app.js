@@ -8,6 +8,9 @@ const app = new Vue({
 
         show: false,
 
+        scTimer: 0,
+        scY: 0,
+
         view: {
             topOfPage: true
           },
@@ -109,6 +112,10 @@ const app = new Vue({
 
     },
 
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+      },
+
     // Change background color to navbar on scroll
     beforeMount() {
     window.addEventListener('scroll', this.handleScroll)
@@ -116,13 +123,28 @@ const app = new Vue({
 
     methods: {
 
+        
+
     handleScroll(){
         if(window.pageYOffset>0){
         if(this.view.topOfPage) this.view.topOfPage = false
         } else {
         if(!this.view.topOfPage) this.view.topOfPage = true
         }
+        if (this.scTimer) return;
+            this.scTimer = setTimeout(() => {
+              this.scY = window.scrollY;
+              clearTimeout(this.scTimer);
+              this.scTimer = 0;
+            }, 100);
     },
+
+    toStart: function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      },
 
     },
     

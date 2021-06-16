@@ -306,9 +306,15 @@
                 <p>© Copyright 2012 - 2021 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>Emanuele</span></p>
     
             </div>
-    
-    
+
         </footer>
+
+        <!-- page top button -->
+        <transition name="fade">
+            <div id="pagetop" class="fixed bottom-0" v-show="scY > 300" @click="toStart">
+                <i class="fas fa-angle-up rounded-top"></i>
+            </div>
+        </transition>
 
     </div>
 

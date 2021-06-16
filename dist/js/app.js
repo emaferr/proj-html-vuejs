@@ -3061,6 +3061,8 @@ var app = new Vue({
   el: '#app',
   data: {
     show: false,
+    scTimer: 0,
+    scY: 0,
     view: {
       topOfPage: true
     },
@@ -3128,17 +3130,35 @@ var app = new Vue({
       post_txt: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo quam non?'
     }]
   },
+  mounted: function mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
   // Change background color to navbar on scroll
   beforeMount: function beforeMount() {
     window.addEventListener('scroll', this.handleScroll);
   },
   methods: {
     handleScroll: function handleScroll() {
+      var _this = this;
+
       if (window.pageYOffset > 0) {
         if (this.view.topOfPage) this.view.topOfPage = false;
       } else {
         if (!this.view.topOfPage) this.view.topOfPage = true;
       }
+
+      if (this.scTimer) return;
+      this.scTimer = setTimeout(function () {
+        _this.scY = window.scrollY;
+        clearTimeout(_this.scTimer);
+        _this.scTimer = 0;
+      }, 100);
+    },
+    toStart: function toStart() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
     }
   }
 });

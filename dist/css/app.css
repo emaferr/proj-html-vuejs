@@ -10932,6 +10932,21 @@ h4, .h4 {
   color: #BE9359;
 }
 
+#pagetop {
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+}
+#pagetop i {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  background-color: #303030;
+  color: whitesmoke;
+}
+#pagetop i:hover {
+  background-color: #BE9359;
+}
+
 .fade-enter {
   opacity: 0;
 }
