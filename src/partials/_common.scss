@@ -52,4 +52,16 @@ h4{
     }
 }
 
+.navbar{
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+
+    i{color: whitesmoke;}
+
+    .hamburger_menu{
+        color: $primary_color;
+    }
+}
+
 
