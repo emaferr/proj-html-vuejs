@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -8,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- My CSS -->
     <link rel="stylesheet" href="./dist/css/app.css">
-
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
-
+    <!-- Favicon -->
     <link rel="icon" href="./dist/img/favicon-barber.png" type="image/png">
 
+    <!-- Title -->
     <title>Barber Shop</title>
 
 </head>
@@ -22,6 +23,7 @@
 
     <div id="app">
 
+        <!-- Fixed button -->
         <div class="absolute_button">
             <button class="fix_btn shadow">
                 <i class="fab fa-atlassian animated flip"></i>
@@ -32,11 +34,11 @@
                 <span class="absolute_text fw-bold">On Sale</span>
             </button>
         </div>
-    
+        <!-- Fixed button -->
+        
+        <!-- Navbar -->
         <nav class="navbar navbar-light py-3" :class="{ 'onScroll': !view.topOfPage}">
-    
             <div class="container">
-    
                 <a class="navbar-brand" href="#">
                     <img src="./dist/img/avadabarbers-logo-x2.png" alt="Barber Shop Logo" width="120" height="40">
                 </a>
@@ -44,11 +46,9 @@
                     <i class="fas fa-shopping-cart fs-6 px-3"></i>
                     <i v-on:click="show = true" class="hamburger_menu fas fa-bars fs-6"></i>
                 </div>
-    
             </div>
-
+            <!-- Drop hamburger menù -->
             <transition name="fade" appear>
-
                 <div v-if="show" class="drop">
                     <div>
                         <ul>
@@ -58,23 +58,16 @@
                     </div>
                     <i v-on:click="show = false" class="fas fa-times"></i>
                 </div>
-            
-            </transition>
-          
+            </transition>  
         </nav>
+        <!-- end Navbar -->
 
-        
-    
         <!-- Site header -->
         <header class="site_header">
-    
             <div class="header_nav">
-    
                 <!-- Jumbotron Section -->
                 <div class="jumbotron">
-    
                     <div class="container">
-            
                         <div class="row">
                             <div class="title_section col-6 my-auto">
                                 <h1 class="">Barber Shop</h1>
@@ -86,12 +79,9 @@
                                 <img src="./dist/img/avadabarbers_hero_focalmirror.png" width="100%" alt="man intent on cutting hair">
                             </div>
                         </div>
-    
                     </div>
-    
                 </div>
             <!-- end Jumbotron Section -->
-    
             </div>
     
         </header>
@@ -102,80 +92,54 @@
     
             <!-- Award section -->
             <section class="awards text-center">
-    
                 <span class="fw-bolder">AWARD WINNING</span>
-    
                 <h2>Pro Barbers</h2>
-    
                 <button class="mt-3">meet your new barber</button>
-    
                 <div class="divisor"></div>
-                
             </section>
             <!-- end Award section -->
     
             <!-- Services section -->
             <section class="services_section text-center bg-white">
-    
                 <span class="fw-bolder">MENS GROOMING</span>
-    
                 <h2 class="mb-3">Services</h2>
-    
                 <div class="container py-5">
-
                     <div class="row">
-
                         <!-- use VueJs to cycle services dynamically -->
                         <div v-for="(service, index) in services" class="services_card col">
-                            
                             <img :src="'./dist/img/' + service.image_service + '.png'" :alt="service.name_service">
                             <h4>{{service.name_service}}</h4>
                             <p>
                                 {{service.description_service}}
                             </p>
                         </div>
-
                     </div>
-
                     <button>read about our service</button>
-
                 </div>
-    
                 <div class="divisor"></div>
-    
             </section>
             <!-- end Services section -->
     
             <!-- Products section -->
             <section class="products_section text-center">
-    
                 <span class="fw-bolder">WE HAVE YOU COVERED</span>
-    
                 <h2 class="mb-3">Avada Grooming Products</h2>
-    
                 <div class="container_big">
-    
                     <div class="row my-5">
-                        
                         <!-- use VueJs to cycle products dynamically -->
                         <div v-for="(product, index) in products" class="col-3">
                             <img :src="'./dist/img/' + product.image_product" :alt="product.name_product">
                             <h4>{{product.name_product}}</h4>
                             <span>${{product.price_product}}</span>
                         </div>
-        
                     </div>
-    
                 </div>
-    
                 <button>shop our product range</button>
-    
             </section>
             <!-- end Products section -->
     
             <!-- Month_product -->
             <section class="month_product">
-    
                 <div class="container">
                     <div class="row">
                         <div class="col-4">
@@ -191,20 +155,15 @@
                         </div>
                     </div>
                 </div>
-    
             </section>
             <!-- end Month_product -->
     
             <!-- Reviews section -->
             <section class="reviews_section text-center">
-    
                 <div class="container">
-    
                     <span class="fw-bolder">WE HAVE YOU COVERED</span>
                     <h2 class="mb-3">Reviews</h2>
-    
                     <div class="row pt-4">
-                        
                         <!-- use VueJs to cycle reviews dynamically -->
                         <div v-for="(review, index) in reviews" class="col-4">
                             <p>
@@ -213,27 +172,18 @@
                             <img :src="'./dist/img/avadabarbers-trimcut-gallery' + review.user_image + '.jpg'" :alt="review.user_name + ' avatar'">
                             <span class="d-block mt-3 fw-bold">{{review.user_name}}</span>
                         </div>
-        
                     </div>
-    
                 </div>
-    
                 <div class="divisor"></div>
-    
             </section>
             <!-- end Reviews section -->
-    
+
             <!-- Blog section -->
             <section class="blog_section text-center">
-    
                 <span class="fw-bolder">TALES FROM THE BARBER SHOP</span>
-    
                 <h2 class="mb-3">Recent Blog Post</h2>
-    
                 <div class="container">
-
                     <div class="row py-4">
-
                         <!-- use VueJs to cycle post dynamically -->
                         <div v-for="(post, index) in posts" class="col-4">
                             <div class="card_blog">
@@ -245,25 +195,20 @@
                                     {{post.post_txt}}
                                 </p>
                             </div>
-    
                         </div>
-
                     </div>
-
                 </div>
-    
                 <button>read more from our blog</button>
-    
             </section>
             <!-- end Blog section -->
-    
+
         </main>
         <!-- end Site Main -->
-    
+
+        <!-- Site footer -->
         <footer class="site_footer text-center">
-    
+
             <div class="footer_section py-5">
-    
                 <div class="container">
                     <div class="row">
                         <div class="col-4">
@@ -293,30 +238,31 @@
                             <button>shop our range now</button>
                         </div>
                     </div>
-    
                 </div>
-                
             </div>
             <div class="copy_section text-center text-white-50">
                 <p>© Copyright 2012 - 2021 | Avada Theme by <span>ThemeFusion</span> | All Rights Reserved | Powered by <span>Emanuele</span></p>
-    
             </div>
 
         </footer>
+        <!-- end Site footer -->
 
-        <!-- page top button -->
+        <!-- page to top button -->
         <transition name="fade">
             <div id="pagetop" class="fixed bottom-0" v-show="scY > 300" @click="toStart">
                 <i class="fas fa-angle-up rounded-top"></i>
             </div>
         </transition>
+        <!-- end page to top button -->
 
     </div>
+    <!-- end App VueJs -->
 
-    
-
+    <!-- VueJs -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- My script -->
     <script src="./dist/js/app.js"></script>
+
 </body>
 
 </html>

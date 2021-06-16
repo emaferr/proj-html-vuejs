@@ -6,22 +6,14 @@
 
 // Award section
 .awards{
-
     position: relative;
-
     background-image: url(../../dist/img/avadabarbers-about-introbackground.jpg);
-
     background-size: 70%;
-
     padding-top: 5rem;
-
     padding-bottom: 10rem;
-
     span{
-        color: $primary_color;
-        font-size: .8rem;
+        @include span_style;
     }
-
     button{
         @include site_button;
         font-weight: bolder;
@@ -30,71 +22,50 @@
 
 // Service section
 .services_section{
-
     position: relative;
-
     padding-top: 3rem;
-
     padding-bottom: 8rem;
-
     span{
-        color: $primary_color;
-        font-size: .8rem;
+        @include span_style;
     }
-
     .services_card{
-
         img{
             height: 90px;
         }
-
         p{
             color: $txt_color_p;
             padding: 1.2rem 1.5rem;
             font-weight: 300;
         }
-
     }
-
     button{
         @include site_button;
         margin-top: 1.5rem;
     }
-
     .divisor{
         @include site_divisor;
         border-bottom: 80px solid #121314;
     }
-
 }
 
 // Products section
 .products_section{
-
     padding-top: 6rem;
     padding-bottom: 3rem;
     margin-top: -2rem;
-
     .row{
         --bs-gutter-x: 0rem;
     }
-
     img{
         height: 250px;
     }
-
     background-image: url(../../dist/img/avadabarbers-reviewsbackground.jpg);
     background-size: cover;
     background-position: center;
-   
-   
-
     span{
-        color: $primary_color;
-        font-size: .8rem;
+        @include span_style;
         font-weight: lighter;
     }
-
     button{
         @include site_button;
         margin-top: 2rem;
@@ -104,27 +75,21 @@
 
 // Month product
 .month_product{
-
     .container{
-
         .col{
             overflow: auto;
             height: 340px;
             background-color: #121314; 
             span{
-                color: $primary_color;
-                font-size: .8rem;
+                @include span_style;
             }
-
             p{
                 color: $txt_color_p;
             }
-
             button{
                 @include site_button;
             }
         }
-
         .col-4{
             display: flex;
             justify-content: center;
@@ -133,68 +98,52 @@
             background-image: url(../../dist/img/avadabarbers-cta-background.jpg);
             background-size: cover;
         }
-
         border-top: 2px solid $primary_color; 
         margin-top: -2.5rem;
-
     }
-
 }
 
 // Reviews section
 .reviews_section{
-
     position: relative;
-
     .divisor{
         @include site_divisor;
         bottom: -80px;
         border-top: 80px solid #ffffff;
         border-bottom: none;
     }
-
     img{
         width: 90px;
         border-radius: 50%;
     }
-
     padding-top: 8rem;
     padding-bottom: 3rem;
-
     p{
         padding: 0 1.5rem;
         color: #868686;
         font-weight: 300;
     }
-
     span{
-        color: $primary_color;
-        font-size: .8rem;
+        @include span_style;
     }
-
 }
 
 // Blog section
 .blog_section{
     background-color: #F5F5F5;
     padding-top: 10rem;
-
     .card_blog{
         width: 100%;
         overflow: auto;
     }
-
     p{
         color: #868686;
         font-weight: 300;
     }
-
-
     img{
        width: 100%;
        height: 180px;
        overflow: auto;
-
        &:hover{
          transform: scale(1.1);
          opacity: 90%;
@@ -202,15 +151,11 @@
          cursor: pointer;
        }
     }
-
     span{
-        color: $primary_color;
-        font-size: .8rem;
+        @include span_style;
     }
-
     button{
         @include site_button;
         margin-bottom: 6rem;
     }
-    
 }

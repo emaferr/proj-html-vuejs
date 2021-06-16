@@ -1,5 +1,4 @@
 @mixin site_button {
-    
     color: $primary_color;
     font-weight: bolder;
     border: 2px solid $primary_color;
@@ -13,7 +12,6 @@
 }
 
 @mixin site_divisor {
-
     position: absolute;
     left: 0;
     bottom: 0;
@@ -21,8 +19,10 @@
     height: 0;
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
-    
 }
 
-
+@mixin span_style {
+    color: $primary_color;
+    font-size: .8rem;
+}
 

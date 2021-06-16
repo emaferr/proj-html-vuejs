@@ -2,7 +2,6 @@
 .container{
     width: 60%;
 }
-
 .container_big{
     width: 90%;
     margin: auto;
@@ -14,7 +13,6 @@ h2{
     font-size: 3rem;
     font-family: 'Abril Fatface', cursive;
 }
-
 h4{
     color: $primary_color;
     padding-top: 1.2rem;
@@ -37,21 +35,19 @@ h4{
         border-radius: 5px;
         line-height: 1rem;
         margin: .2rem .5rem;
-
         i{
             color: #33475B;
         }
-
         .price {
             color: #65BC7B;
         }
-
         .absolute_text{
             font-size: .5rem;
         }
     }
 }
 
+// Navbar
 .navbar{
     position: fixed;
     z-index: 99999;
@@ -61,16 +57,13 @@ h4{
         box-shadow: 0 0 10px #1f1f1ff1;
         background-color: #000000ea;
       }
-
     i{color: whitesmoke; cursor: pointer;}
-
     .hamburger_menu{
         color: $primary_color;
         &:hover{
             filter: brightness(70%);
         }
     }
-
     .drop{
         position: fixed;
         background: #000000e3;
@@ -80,13 +73,10 @@ h4{
         display: flex;
         align-items: center;
         justify-content: center;
-        line-height: 2.6rem;
-      
+        line-height: 2.6rem; 
         ul{
             list-style: none;
-
             text-align: center;
-
             li{
                 cursor: pointer;
                 color: whitesmoke;
@@ -96,11 +86,8 @@ h4{
                 &:hover{
                     color: $primary_color
                 }
-
             }
-
         }
-
         i{
             font-size: 1.5rem;
             cursor: pointer;
@@ -111,7 +98,6 @@ h4{
             &:hover{
                 color: $primary_color
             }
-
         }
     }
 }
@@ -121,24 +107,21 @@ h4{
     cursor: pointer;
     position: fixed;
     right: 50px;
-
     i{
         font-size: 1rem;
         padding: .3rem 1rem;
         background-color: #303030;
         color: whitesmoke; 
-
         &:hover{
             background-color: $primary_color;
         }
     }
 }
+
 // dropmenu animation
 .fade-enter { opacity: 0 };
 .fade-enter-active { transition: opacity 1s ease };
 .fade-leave-active { transition: opacity 1s ease; opacity: 0};
-
-
 .fix_btn:hover .animated {
     animation-duration: 2.5s;
     animation-fill-mode: both;
@@ -152,8 +135,8 @@ h4{
     50% {transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);animation-timing-function: ease-in;}
     80% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);animation-timing-function: ease-in;}
     100% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);animation-timing-function: ease-in;}
-  }
-  .animated.flip {
+}
+.animated.flip {
     backface-visibility: visible;
     animation-name: flip;
-  }
+}

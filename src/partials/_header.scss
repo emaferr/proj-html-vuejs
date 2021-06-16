@@ -1,52 +1,44 @@
+// Site header
 header{
     position: sticky;
     width: 100%;
-    
+   
+    // Jumbotron
     .jumbotron{
         position: relative;
         background-image: url(../../dist/img/avadabarbers-homepage-hero-bg.jpg);
         background-size: cover;
         padding-bottom: 7.7rem;
         color: #DDDDDD;
-
         .container{
             padding-top: 4rem;
         }
-
         .title_section{
-
             line-height: 3rem;
-
             h1{
                 font-family: 'Abril Fatface', cursive;
                 font-size: 4rem;
                 margin-bottom: 1.5rem
             }
-    
             span{
                 color: #545452;
                 font-weight: 300;
             }
-    
             hr{
                 width: 180px;
                 height: 3px;
                 color: $primary_color;
                 opacity: unset;
             }
-    
             button{
                 @include site_button;
                 display: block;
                 margin-top: 1rem;
                 line-height: 1rem;
             }
-
         }
-
         .hamburger_menu{
             color: $primary_color;
         }
-
     }
 }
