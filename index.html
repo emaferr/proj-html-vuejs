@@ -236,20 +236,23 @@
                 <h2 class="mb-3">Recent Blog Post</h2>
     
                 <div class="container">
+
                     <div class="row py-4">
-                        <div class="col-4">
+
+                        <!-- use VueJs to cycle post dynamically -->
+                        <div v-for="(post, index) in posts" class="col-4">
                             <div class="card_blog">
-                                <img src="./dist/img/avadabarbers-second-blog-700x441.jpg" alt="">
+                                <img :src=" './dist/img/avadabarbers-' + post.post_image + '-blog-700x441.jpg'" alt="">
                             </div>
                             <div class="px-3">
-                                <h4>Avada Barbars Now Open</h4>
+                                <h4>{{post.post_name}}</h4>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo quam non?
+                                    {{post.post_txt}}
                                 </p>
                             </div>
     
                         </div>
-                        <div class="col-4 ">
+                        <!-- <div class="col-4 ">
                             <div class="card_blog">
                                 <img src="./dist/img/avadabarbers-choosing-blog-700x441.jpg" alt="">
                             </div>
@@ -270,7 +273,7 @@
                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo quam non?
                                 </p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
     

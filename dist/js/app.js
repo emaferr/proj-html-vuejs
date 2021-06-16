@@ -3106,6 +3106,19 @@ var app = new Vue({
       user_name: 'Mark Wilson',
       user_image: '3',
       review_txt: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, ullam commodi vel, atque consequatur assumenda recusandae vero nemo.'
+    }],
+    posts: [{
+      post_name: 'Avada Barbars Now Open',
+      post_image: 'second',
+      post_txt: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo quam non?'
+    }, {
+      post_name: 'Choosing The Right Barber',
+      post_image: 'choosing',
+      post_txt: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo quam non?'
+    }, {
+      post_name: 'Quick Service Guide',
+      post_image: 'ourservice',
+      post_txt: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo quam non?'
     }]
   },
   // Change background color to navbar on scroll
@@ -3119,10 +3132,7 @@ var app = new Vue({
       } else {
         if (!this.view.topOfPage) this.view.topOfPage = true;
       }
-    } // openHamMenu(){
-    //     console.log('ciao');
-    // }
-
+    }
   }
 });
 
