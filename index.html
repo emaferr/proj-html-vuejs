@@ -52,13 +52,8 @@
                 <div v-if="show" class="drop">
                     <div>
                         <ul>
-                            <li>home</li>
-                            <li>about Us</li>
-                            <li>services</li>
-                            <li>shop</li>
-                            <li>our Team</li>
-                            <li>blog</li>
-                            <li>contact us</li>
+                            <!-- use VueJs to cycle page site -->
+                            <li v-for="(page, index) in sitePages">{{page}}</li>
                         </ul>
                     </div>
                     <i v-on:click="show = false" class="fas fa-times"></i>

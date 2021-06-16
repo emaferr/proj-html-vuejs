@@ -29,6 +29,8 @@ const app = new Vue({
 
         },
 
+        sitePages: ['home','about us','services','shop','our team','blog','contact us'],
+
         services: [
 
             {

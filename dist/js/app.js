@@ -3073,6 +3073,7 @@ var app = new Vue({
       eMail: 'info@yourwebsite.com',
       phone: '+1 (555) 555-1212'
     },
+    sitePages: ['home', 'about us', 'services', 'shop', 'our team', 'blog', 'contact us'],
     services: [{
       image_service: 'avadabarbers-trimcut-icon-before',
       name_service: 'Trim & Cut',
