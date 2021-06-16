@@ -138,3 +138,22 @@ h4{
 .fade-enter-active { transition: opacity 1s ease };
 .fade-leave-active { transition: opacity 1s ease; opacity: 0};
 
+
+.fix_btn:hover .animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  };
+
+// animation on hover fixed buttons
+@keyframes flip {
+    0% {transform: perspective(400px) translateZ(0) rotateY(0) scale(1);animation-timing-function: ease-out;}
+    40% {transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);animation-timing-function: ease-out;}
+    50% {transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);animation-timing-function: ease-in;}
+    80% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);animation-timing-function: ease-in;}
+    100% {transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);animation-timing-function: ease-in;}
+  }
+  .animated.flip {
+    backface-visibility: visible;
+    animation-name: flip;
+  }
