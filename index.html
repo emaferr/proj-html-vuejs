@@ -118,22 +118,11 @@
                                 {{service.description_service}}
                             </p>
                         </div>
-                        <!-- <div class="services_card col">
-                            <img src="./dist/img/avadabarbers-washndry-icon.png" alt="Trimcut icon">
-                            <h4>Wash & Dry</h4>
-                            <p>
-                                Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.
-                            </p>
-                        </div>
-                        <div class="services_card col">
-                            <img src="./dist/img/avadabarbers-beardtrim-icon.png" alt="Trimcut icon">
-                            <h4>Beard Tidy</h4>
-                            <p>
-                                Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.
-                            </p>
-                        </div> -->
+
                     </div>
+
                     <button>read about our service</button>
+
                 </div>
     
                 <div class="divisor"></div>
@@ -151,13 +140,14 @@
                 <div class="container_big">
     
                     <div class="row my-5">
-    
-                        <div class="col-3">
-                            <img src="./dist/img/brush_dark.png" alt="Trimcut icon">
-                            <h4>Brush</h4>
-                            <span>$15.00</span>
+                        
+                        <!-- use VueJs to cycle products dynamically -->
+                        <div v-for="(product, index) in products" class="col-3">
+                            <img :src="'./dist/img/' + product.image_product" alt="Trimcut icon">
+                            <h4>{{product.name_product}}</h4>
+                            <span>${{product.price_product}}</span>
                         </div>
-                        <div class="col-3">
+                        <!-- <div class="col-3">
                             <img src="./dist/img/scissors.webp" alt="Trimcut icon">
                             <h4>Scissors</h4>
                             <span>$85.00</span>
@@ -171,7 +161,7 @@
                             <img src="./dist/img/straight_razor_dark.png" alt="Trimcut icon">
                             <h4>Straight Razor</h4>
                             <span>$30.00</span>
-                        </div>
+                        </div> -->
     
                     </div>
     
