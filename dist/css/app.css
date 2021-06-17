@@ -10889,11 +10889,13 @@ h4, .h4 {
   color: whitesmoke;
   cursor: pointer;
 }
-.navbar .hamburger_menu {
+.navbar i:hover {
+  filter: brightness(70%);
   color: #BE9359;
 }
-.navbar .hamburger_menu:hover {
-  filter: brightness(70%);
+.navbar .hamburger_menu {
+  font-size: 1.4rem !important;
+  color: #BE9359;
 }
 .navbar .drop {
   position: fixed;
@@ -11340,11 +11342,16 @@ header .jumbotron .hamburger_menu {
 }
 .footer_section i {
   cursor: pointer;
-  padding: 0 0.5rem;
   color: whitesmoke;
+}
+.footer_section i span {
+  visibility: hidden;
 }
 .footer_section i:hover {
   color: #BE9359;
+}
+.footer_section i:hover span {
+  visibility: visible;
 }
 
 .copy_section {

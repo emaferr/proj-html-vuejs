@@ -42,7 +42,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="./dist/img/avadabarbers-logo-x2.png" alt="Barber Shop Logo" width="120" height="40">
                 </a>
-                <div>
+                <div class="d-flex align-items-center">
                     <i class="fas fa-shopping-cart fs-6 px-3"></i>
                     <i v-on:click="show = true" class="hamburger_menu fas fa-bars fs-6"></i>
                 </div>
@@ -227,10 +227,11 @@
                             </p>
                             <span>FOLLOW US</span>
                             <div class="footer_icons">
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <i class="fab fa-youtube"></i>
-                                <i class="fab fa-instagram"></i>
+                                 <!-- use VueJs to cycle social icons -->
+                                <i v-for="(socialIcon, index) in socialIcons" :class="socialIcon.social_icon">
+                                    <span class="d-block pt-2">{{socialIcon.social_name}}</span>
+                                </i>
+
                             </div>
                         </div>
                         <div class="col-4">

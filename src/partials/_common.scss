@@ -57,12 +57,15 @@ h4{
         box-shadow: 0 0 10px #1f1f1ff1;
         background-color: #000000ea;
       }
-    i{color: whitesmoke; cursor: pointer;}
-    .hamburger_menu{
-        color: $primary_color;
+    i{color: whitesmoke; cursor: pointer; 
         &:hover{
             filter: brightness(70%);
+            color: $primary_color;
         }
+    }
+    .hamburger_menu{
+        font-size: 1.4rem !important;
+        color: $primary_color;
     }
     .drop{
         position: fixed;

@@ -7,7 +7,6 @@ const app = new Vue({
     data:{
 
         show: false,
-
         scTimer: 0,
         scY: 0,
 
@@ -18,16 +17,36 @@ const app = new Vue({
         agency: {
 
             name: 'Avada Barbers',
-
             street: '123 New York Street',
-
             city: 'New York City',
-
             eMail: 'info@yourwebsite.com',
-
             phone: '+1 (555) 555-1212'
 
         },
+
+        socialIcons:[
+
+            {
+                social_name : 'Facebook',
+                social_icon : 'fab fa-facebook-f',
+                active : false,
+            },
+            {
+                social_name : 'Twitter',
+                social_icon : 'fab fa-twitter',
+                active : false,
+            },
+            {
+                social_name : 'YouTube',
+                social_icon : 'fab fa-youtube',
+                active : false,
+            },
+            {
+                social_name : 'Instagram',
+                social_icon : 'fab fa-instagram',
+                active : false,
+            }
+        ],
 
         sitePages: ['home','about us','services','shop','our team','blog','contact us'],
 
@@ -124,9 +143,7 @@ const app = new Vue({
     },
 
     methods: {
-
-        
-
+    
     handleScroll(){
         if(window.pageYOffset>0){
         if(this.view.topOfPage) this.view.topOfPage = false
@@ -134,11 +151,11 @@ const app = new Vue({
         if(!this.view.topOfPage) this.view.topOfPage = true
         }
         if (this.scTimer) return;
-            this.scTimer = setTimeout(() => {
-              this.scY = window.scrollY;
-              clearTimeout(this.scTimer);
-              this.scTimer = 0;
-            }, 100);
+        this.scTimer = setTimeout(() => {
+            this.scY = window.scrollY;
+            clearTimeout(this.scTimer);
+            this.scTimer = 0;
+        }, 100);
     },
 
     toStart: function () {

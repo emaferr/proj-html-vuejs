@@ -3073,6 +3073,23 @@ var app = new Vue({
       eMail: 'info@yourwebsite.com',
       phone: '+1 (555) 555-1212'
     },
+    socialIcons: [{
+      social_name: 'Facebook',
+      social_icon: 'fab fa-facebook-f',
+      active: false
+    }, {
+      social_name: 'Twitter',
+      social_icon: 'fab fa-twitter',
+      active: false
+    }, {
+      social_name: 'YouTube',
+      social_icon: 'fab fa-youtube',
+      active: false
+    }, {
+      social_name: 'Instagram',
+      social_icon: 'fab fa-instagram',
+      active: false
+    }],
     sitePages: ['home', 'about us', 'services', 'shop', 'our team', 'blog', 'contact us'],
     services: [{
       image_service: 'avadabarbers-trimcut-icon-before',
