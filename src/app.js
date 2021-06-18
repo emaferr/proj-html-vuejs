@@ -168,3 +168,56 @@ const app = new Vue({
     },
     
 })
+
+// Parallax Footer
+var body = document.getElementsByTagName('body')[0];
+
+initializeParallaxFooter(
+  // main can be whatever element you want
+  document.getElementsByTagName('main')[0],
+  // footer can be whatever element you want
+  document.getElementsByTagName('footer')[0]
+);
+
+function initializeParallaxFooter(mainElement, footerElement) {
+  footerElement.style.left = '0';
+  footerElement.style.right = '0';
+  footerElement.style.zIndex = '-1';
+  updateParallaxFooter(mainElement, footerElement);
+  window.addEventListener('resize', function() {
+    updateParallaxFooter(mainElement, footerElement);
+  });
+  window.addEventListener('scroll', function() {
+    updateParallaxFooter(mainElement, footerElement);
+  });
+}
+
+function updateParallaxFooter(mainElement, footerElement) {
+
+  if (isViewportSmallerThanFooter(footerElement)) {
+    // Reset bottom style in case user resized window
+    footerElement.style.bottom = '';
+    footerElement.style.top = '0';
+  } else {
+    // Reset top style in case user resized window
+    footerElement.style.top = '';
+    footerElement.style.bottom = '0';
+  }
+  if (window.scrollY > getBottomY(mainElement)) {
+    footerElement.style.position = 'static';
+    // Margin is only used to add
+    body.style.marginBottom = '0px';
+  } else {
+    body.style.marginBottom = footerElement.offsetHeight + 'px';
+    footerElement.style.position = 'fixed';
+  }
+  
+}
+
+function isViewportSmallerThanFooter(footerElement) {
+  return window.innerHeight < footerElement.offsetHeight;
+}
+
+function getBottomY(element) {
+  return element.offsetTop + element.offsetHeight;
+}

@@ -11195,6 +11195,9 @@ header .jumbotron .hamburger_menu {
   filter: brightness(70%);
 }
 
+.month_product {
+  background-color: white;
+}
 .month_product .container {
   border-top: 2px solid #BE9359;
   margin-top: -2.5rem;
@@ -11233,6 +11236,7 @@ header .jumbotron .hamburger_menu {
 }
 
 .reviews_section {
+  background-color: white;
   position: relative;
   padding-top: 8rem;
   padding-bottom: 3rem;

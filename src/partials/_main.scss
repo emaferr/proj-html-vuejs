@@ -75,6 +75,7 @@
 
 // Month product
 .month_product{
+    background-color: white;
     .container{
         .col{
             overflow: auto;
@@ -105,6 +106,7 @@
 
 // Reviews section
 .reviews_section{
+    background-color: white;
     position: relative;
     .divisor{
         @include site_divisor;
