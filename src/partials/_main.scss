@@ -75,7 +75,14 @@
 
 // Month product
 .month_product{
+
     background-color: white;
+
+    .row{
+        border-top: 2px solid $primary_color; 
+        margin-top: -2.5rem;
+    }
+
     .container{
         .col{
             overflow: auto;
@@ -100,7 +107,6 @@
             background-size: cover;
         }
         border-top: 2px solid $primary_color; 
-        margin-top: -2.5rem;
     }
 }
 
