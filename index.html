@@ -106,7 +106,7 @@
                 <div class="container py-5">
                     <div class="row">
                         <!-- use VueJs to cycle services dynamically -->
-                        <div v-for="(service, index) in services" class="services_card col">
+                        <div v-for="(service, index) in services" class="services_card col-4">
                             <img :src="'./dist/img/' + service.image_service + '.png'" :alt="service.name_service">
                             <h4>{{service.name_service}}</h4>
                             <p>

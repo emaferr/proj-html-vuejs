@@ -11125,6 +11125,10 @@ header .jumbotron .hamburger_menu {
   padding-top: 3rem;
   padding-bottom: 8rem;
 }
+.services_section .row {
+  overflow: auto;
+  flex-wrap: nowrap;
+}
 .services_section span {
   color: #BE9359;
   font-size: 0.8rem;

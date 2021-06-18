@@ -25,6 +25,10 @@
     position: relative;
     padding-top: 3rem;
     padding-bottom: 8rem;
+    .row{
+        overflow: auto;
+        flex-wrap: nowrap;
+    }
     span{
         @include span_style;
     }

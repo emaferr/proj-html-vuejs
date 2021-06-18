@@ -3103,6 +3103,18 @@ var app = new Vue({
       image_service: 'avadabarbers-beardtrim-icon',
       name_service: 'Beard Tidy',
       description_service: 'Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.'
+    }, {
+      image_service: 'avadabarbers-services-hairstyling',
+      name_service: 'Hair Styling',
+      description_service: 'Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.'
+    }, {
+      image_service: 'avadabarbers-services-oils',
+      name_service: 'Oils & Scrubs',
+      description_service: 'Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.'
+    }, {
+      image_service: 'avadabarbers-services-artisancoffee',
+      name_service: 'Artisan Coffee',
+      description_service: 'Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridiculously good looking.'
     }],
     products: [{
       image_product: 'brush_dark.png',
