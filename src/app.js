@@ -90,6 +90,16 @@ const app = new Vue({
                 image_product: 'straight_razor_dark.png',
                 name_product:'Straight Razor',
                 price_product:'30.00'
+            },
+            {
+              image_product: 'shave_balm-768x768.png',
+              name_product:'Shave Balm',
+              price_product:'15.00'
+            },
+            {
+              image_product: 'safety_set-768x768.png',
+              name_product:'Safety Set',
+              price_product:'45.00'
             }
         ],
 

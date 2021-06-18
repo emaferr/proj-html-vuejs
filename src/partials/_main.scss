@@ -55,6 +55,8 @@
     margin-top: -2rem;
     .row{
         --bs-gutter-x: 0rem;
+        overflow: auto;
+        flex-wrap: nowrap;
     }
     img{
         height: 250px;

@@ -11171,6 +11171,8 @@ header .jumbotron .hamburger_menu {
 }
 .products_section .row {
   --bs-gutter-x: 0rem;
+  overflow: auto;
+  flex-wrap: nowrap;
 }
 .products_section img {
   height: 250px;
