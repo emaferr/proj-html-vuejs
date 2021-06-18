@@ -11126,17 +11126,18 @@ header .jumbotron .hamburger_menu {
   padding-bottom: 8rem;
 }
 .services_section .row {
+  position: relative;
   overflow: auto;
   flex-wrap: nowrap;
 }
-.services_section span {
+.services_section .row span {
   color: #BE9359;
   font-size: 0.8rem;
 }
-.services_section .services_card img {
+.services_section .row .services_card img {
   height: 90px;
 }
-.services_section .services_card p {
+.services_section .row .services_card p {
   color: #868686;
   padding: 1.2rem 1.5rem;
   font-weight: 300;
@@ -11153,6 +11154,16 @@ header .jumbotron .hamburger_menu {
 }
 .services_section button:hover {
   filter: brightness(70%);
+}
+.services_section .arrow_sx {
+  position: absolute;
+  left: 20%;
+  top: 35%;
+}
+.services_section .arrow_dx {
+  position: absolute;
+  right: 20%;
+  top: 35%;
 }
 .services_section .divisor {
   position: absolute;

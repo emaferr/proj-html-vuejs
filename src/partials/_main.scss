@@ -26,25 +26,39 @@
     padding-top: 3rem;
     padding-bottom: 8rem;
     .row{
+        position: relative;
         overflow: auto;
         flex-wrap: nowrap;
-    }
-    span{
-        @include span_style;
-    }
-    .services_card{
-        img{
-            height: 90px;
+        span{
+            @include span_style;
         }
-        p{
-            color: $txt_color_p;
-            padding: 1.2rem 1.5rem;
-            font-weight: 300;
+        .services_card{
+            img{
+                height: 90px;
+            }
+            p{
+                color: $txt_color_p;
+                padding: 1.2rem 1.5rem;
+                font-weight: 300;
+            }
         }
+
     }
     button{
         @include site_button;
         margin-top: 1.5rem;
+    }
+
+    .arrow_sx{
+        position: absolute;
+        left: 20%;
+        top: 35%;
+    }
+
+    .arrow_dx{
+        position: absolute;
+        right: 20%;
+        top: 35%;
     }
     .divisor{
         @include site_divisor;
@@ -144,8 +158,10 @@
 
 // Blog section
 .blog_section{
+
     background-color: #F5F5F5;
-    padding-top: 10rem;
+    padding-top : 10rem;
+
     .card_blog{
         width: 100%;
         overflow: auto;

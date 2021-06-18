@@ -1,5 +1,10 @@
 import 'bootstrap';
 
+// Import VueScrollTo
+import vuescroll from 'vuescroll';
+// import Vue from 'vue';
+Vue.use(vuescroll);
+
 const app = new Vue({
 
     el:'#app',
@@ -9,6 +14,7 @@ const app = new Vue({
         show: false,
         scTimer: 0,
         scY: 0,
+        contatore: 0,
 
         view: {
             topOfPage: true
@@ -168,7 +174,18 @@ const app = new Vue({
     },
 
     methods: {
-    
+
+      scroll_left() {
+        let content = document.querySelector(".prova");
+        content.scrollLeft -= 300;
+      },
+      scroll_right() {
+        let content = document.querySelector(".prova");
+        content.scrollLeft += 300;
+      },
+
+      
+ 
     handleScroll(){
         if(window.pageYOffset>0){
         if(this.view.topOfPage) this.view.topOfPage = false

@@ -104,7 +104,7 @@
                 <span class="fw-bolder">MENS GROOMING</span>
                 <h2 class="mb-3">Services</h2>
                 <div class="container py-5">
-                    <div class="row">
+                    <div class="row prova">
                         <!-- use VueJs to cycle services dynamically -->
                         <div v-for="(service, index) in services" class="services_card col-4">
                             <img :src="'./dist/img/' + service.image_service + '.png'" :alt="service.name_service">
@@ -114,6 +114,8 @@
                             </p>
                         </div>
                     </div>
+                    <i @click="scroll_left" class="fas fa-angle-left arrow_sx"></i>
+                    <i @click="scroll_right" class="fas fa-angle-right arrow_dx"></i>
                     <button>read about our service</button>
                 </div>
                 <div class="divisor"></div>
@@ -226,7 +228,7 @@
                                 <span class="text-white-50">{{agency.phone}}</span>
                             </p>
                             <span>FOLLOW US</span>
-                            <div class="footer_icons">
+                            <div style="margin-bottom: -23px;" class="footer_icons">
                                  <!-- use VueJs to cycle social icons -->
                                 <i v-for="(socialIcon, index) in socialIcons" :class="socialIcon.social_icon">
                                     <span class="d-block pt-2">{{socialIcon.social_name}}</span>
