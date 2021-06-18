@@ -104,6 +104,8 @@
                 <span class="fw-bolder">MENS GROOMING</span>
                 <h2 class="mb-3">Services</h2>
                 <div class="container py-5">
+
+                    
                     <div class="row prova">
                         <!-- use VueJs to cycle services dynamically -->
                         <div v-for="(service, index) in services" class="services_card col-4">
@@ -127,7 +129,7 @@
                 <span class="fw-bolder">WE HAVE YOU COVERED</span>
                 <h2 class="mb-3">Avada Grooming Products</h2>
                 <div class="container_big">
-                    <div class="row my-5">
+                    <div class="row my-5 prova2">
                         <!-- use VueJs to cycle products dynamically -->
                         <div v-for="(product, index) in products" class="col-3">
                             <img :src="'./dist/img/' + product.image_product" :alt="product.name_product">
@@ -135,6 +137,8 @@
                             <span>${{product.price_product}}</span>
                         </div>
                     </div>
+                    <i @click="scroll_left" class="fas fa-angle-left arrow_sx"></i>
+                    <i @click="scroll_right" class="fas fa-angle-right arrow_dx"></i>
                 </div>
                 <button>shop our product range</button>
             </section>
@@ -238,7 +242,7 @@
                         </div>
                         <div class="col-4">
                             <img src="./dist/img/avadabarbers_footer_appointment_image-500x390.png" alt="">
-                            <button>shop our range now</button>
+                            <button>book your appointment</button>
                         </div>
                     </div>
                 </div>

@@ -11155,15 +11155,22 @@ header .jumbotron .hamburger_menu {
 .services_section button:hover {
   filter: brightness(70%);
 }
-.services_section .arrow_sx {
+.services_section i {
   position: absolute;
-  left: 20%;
+  font-size: 3rem;
+  color: #b1b1b170;
+  cursor: pointer;
   top: 35%;
 }
+.services_section i:hover {
+  color: #BE9359;
+  filter: opacity(50%);
+}
+.services_section .arrow_sx {
+  left: 20%;
+}
 .services_section .arrow_dx {
-  position: absolute;
   right: 20%;
-  top: 35%;
 }
 .services_section .divisor {
   position: absolute;
@@ -11179,10 +11186,27 @@ header .jumbotron .hamburger_menu {
 .products_section {
   padding-top: 6rem;
   padding-bottom: 3rem;
-  margin-top: -2rem;
+  position: relative;
   background-image: url(../../dist/img/avadabarbers-reviewsbackground.jpg);
   background-size: cover;
   background-position: center;
+}
+.products_section i {
+  position: absolute;
+  font-size: 3rem;
+  color: #b1b1b170;
+  cursor: pointer;
+  top: 42%;
+}
+.products_section i:hover {
+  color: #BE9359;
+  filter: opacity(50%);
+}
+.products_section .arrow_sx {
+  left: 7%;
+}
+.products_section .arrow_dx {
+  right: 7%;
 }
 .products_section .row {
   --bs-gutter-x: 0rem;
@@ -11216,6 +11240,7 @@ header .jumbotron .hamburger_menu {
   background-color: white;
 }
 .month_product .row {
+  position: relative;
   border-top: 2px solid #BE9359;
   margin-top: -2.5rem;
 }

@@ -1,8 +1,10 @@
 import 'bootstrap';
 
-// Import VueScrollTo
+// Import VueScrollTo and AutoScroll
 import vuescroll from 'vuescroll';
-// import Vue from 'vue';
+import AutoScroll from "vue-plugin-autoscroll";
+ 
+Vue.use(AutoScroll);
 Vue.use(vuescroll);
 
 const app = new Vue({
@@ -166,6 +168,9 @@ const app = new Vue({
 
     mounted() {
         window.addEventListener('scroll', this.handleScroll);
+
+        
+
       },
 
     // Change background color to navbar on scroll
@@ -175,16 +180,26 @@ const app = new Vue({
 
     methods: {
 
+      // use VueScroll
       scroll_left() {
         let content = document.querySelector(".prova");
-        content.scrollLeft -= 300;
+        let content2 = document.querySelector(".prova2");
+        content.scrollLeft -= 1000;
+        content2.scrollLeft -= 400;
+        // setTimeout(() => {
+        //   content.scrollLeft -= 330;
+        // }, 3000);
       },
       scroll_right() {
         let content = document.querySelector(".prova");
-        content.scrollLeft += 300;
-      },
+        let content2 = document.querySelector(".prova2");
+        content.scrollLeft += 1000;
+        content2.scrollLeft += 400;
+        // setTimeout(() => {
+        //   content.scrollLeft += 330;
+        // }, 3000);
 
-      
+      },
  
     handleScroll(){
         if(window.pageYOffset>0){

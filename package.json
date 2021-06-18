@@ -32,6 +32,7 @@
     "webpack": "^5.39.1"
   },
   "dependencies": {
+    "vue-plugin-autoscroll": "^0.1.4",
     "vue-scroll-to": "^2.2.1",
     "vuescroll": "^4.17.3"
   }

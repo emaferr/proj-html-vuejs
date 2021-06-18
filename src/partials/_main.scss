@@ -42,23 +42,20 @@
                 font-weight: 300;
             }
         }
-
     }
     button{
         @include site_button;
         margin-top: 1.5rem;
     }
-
-    .arrow_sx{
-        position: absolute;
-        left: 20%;
+    i{
+        @include arrow_scroll;
         top: 35%;
     }
-
+    .arrow_sx{
+        left: 20%;
+    }
     .arrow_dx{
-        position: absolute;
         right: 20%;
-        top: 35%;
     }
     .divisor{
         @include site_divisor;
@@ -69,8 +66,18 @@
 // Products section
 .products_section{
     padding-top: 6rem;
-    padding-bottom: 3rem;
-    margin-top: -2rem;
+    padding-bottom: 3rem;  
+    position: relative;
+    i{
+        @include arrow_scroll;
+        top: 42%;
+    }
+    .arrow_sx{
+        left: 7%;
+    }
+    .arrow_dx{
+        right: 7%;
+    }
     .row{
         --bs-gutter-x: 0rem;
         overflow: auto;
@@ -99,6 +106,7 @@
     background-color: white;
 
     .row{
+        position: relative;
         border-top: 2px solid $primary_color; 
         margin-top: -2.5rem;
     }
